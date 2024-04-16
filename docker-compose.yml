@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  database:
+    image: "bitnami/postgresql:latest"
+    environment:
+      - POSTGRESQL_USERNAME=postgres
+      - POSTGRESQL_PASSWORD=postgres
+      - POSTGRESQL_DATABASE=banana_bank_dev
+    ports:
+      - "5432:5432"
